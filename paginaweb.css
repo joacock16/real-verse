@@ -1,0 +1,393 @@
+header {
+    background: linear-gradient(90deg, #410CA6 0%, #8468C6 100%);
+}
+
+/* secciones */
+section{
+    display: flex;
+    justify-content: center;
+}
+/* evitar texto morado */
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+body{
+    background: linear-gradient( 90deg, #848ce0 30%, #c4b8df 70%);
+    font-family: resto;
+}
+p{
+text-align: center;
+margin-left: 40px;
+margin-right: 40px;
+}
+
+.margenizq{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* tarjetas del index */
+.card{
+    display: inline-block;
+    margin: 25px;
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: whitesmoke;
+    position: relative;
+    justify-content: center;
+    padding: 1.8rem;
+    border: 2px solid #410CA6;
+    text-align: center;
+    align-items: center;
+    transition: .4;
+    transform-style: preserve-3d;
+   }  
+   .card img{
+    width: 150px;
+    fill: #848ce0;
+}
+
+/* animacion tarjeta index*/
+.card:hover {
+    background-position: -100px 100px, -100px 100px;
+    transform: translateY(-25px);
+}
+
+/* footer general */
+footer{
+    background: linear-gradient(45deg, #8468C6 0%, #410CA6 100% );
+    position: fixed;
+    left: 0px;
+    font-family: resto;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* barra de navegacion (quienes somos, formulario, que hacemos) */
+nav{
+    background-color:#A28DD4 100%;
+    font-family: resto;
+}
+
+/* pasasr el mouse sobre las opciones*/
+.nav ul li:hover ul{
+    left: 0.5px;
+    right: 0.5px;
+    display: block;
+}
+
+/* desplegable de mision y valores*/
+.desplegable{
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 0;
+    background-color: #c4b8df;
+    position: absolute;
+    left: -99999999px;
+    margin-top: 0.5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-family: resto;
+    border-left: white ;
+}
+.desplegable li:hover{
+    display: block;
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.nav ul li{
+    float: center;
+    display: block;
+    position: relative;
+}
+.nav ul li a:hover{
+    color:black;
+    background: lightgray;
+    font-family: resto;
+}
+.button{
+    appearance: none;
+    background-color: #AA97D8;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 600px;
+    display: inline-block;
+    font-family: resto;
+    padding: 6px 16px;
+    position: relative;
+}
+
+/* página de qué hacemos */
+.icon{
+    display: inline-block;
+    margin: 25px;
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    text-align: center;
+    transform-style: preserve-3d;
+   }
+   .icon:hover{
+    transform: translateY(-25px);
+   }
+   .icon img{
+    width: 150px;
+    fill: #848ce0;
+}
+/* tarjeta que giran y precio */
+.inner{
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: black;
+    border-radius: 12px;
+    font-family: resto;
+    position: relative;
+}
+.precio{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    color: black;
+    font-family: resto;
+    padding: 0.625em 0.75em;
+}
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    align-items: center;
+    display: inline-block;
+    margin: 25px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    font-family: resto;
+    transition: .4;
+  }
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    font-family: resto;
+    display: inline-block;
+} 
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #A28DD4;
+    border-radius: 1rem;
+    font-family: resto;
+} 
+.flip-card-front {
+    background: #410CA6;
+    color: pink;
+    align-items: center;
+    font-family: resto;
+} 
+.flip-card-back {
+    background:black;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: resto;
+}
+
+/* imagenes flotantes */
+img.derecha {
+    float: right;
+}
+img.izquierda {
+    float: left;
+}
+
+/* bottón formulaio de contacto */
+button{
+    background-color: #c4b8df;
+    border-radius: 16px;
+    border-width: 0 0 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    padding: 13px 19px;
+    text-align: center;
+}
+button:hover{
+    filter: brightness(1.1);
+}
+button:active{
+    padding-bottom: 10px;
+}
+
+/*  formulario de contacto */
+.formulario{
+    display: flex;
+    justify-content: left;
+    align-items: initial;
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+    font-family: resto;
+}
+.formulariogrande{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient( 90deg, #848ce0 30%, #c4b8df 70%);
+    font-family: resto;
+}
+label{
+    width: 200px;
+    text-align: left;
+    padding-left: 5px;
+    background-color: whitesmoke;
+    font-family: resto;
+}
+form{
+    margin-left: - 100px;
+    background: black;
+    border-radius: 10px;
+    text-align: left;
+    background-color: whitesmoke;
+}
+input, textarea {
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 10px;
+    justify-content: left;
+}
+fieldset{
+    border-radius: 4px;
+    border-color: black;
+    background-color: whitesmoke;
+}
+
+button{
+    justify-content: center;
+}
+.enlinea{
+    display: flex;
+    align-items: initial;
+    margin-bottom: 15px;
+    font-family: resto;
+}
+
+/* dos columnas quienes somos */
+.articulo{
+    column-count: 2;
+    column-gap: 5%;
+    column-rule: 2px solid hotpink;
+    text-align: justify;
+    font-family: resto;
+    padding: 20px;
+}
+
+/* imagen flotante */
+img.arriba {
+    float: left;
+    margin-right: 10px;
+}
+
+/* mapa*/
+.mapita{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/* card de horario en la página de formulario*/
+.Horario{
+    display: block;
+    background-color: #f7f7f8;
+    width: 25%;
+    text-align: center;
+    padding-block: 2em;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+    gap: 3em;
+    font-family: resto;
+}
+.horario_text{
+    color: black;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-family: resto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: resto;
+}
+
+/* hr customizado*/
+.custom{
+    width: 70%; /* Ajusta el tamaño a 70% */
+    margin: 0 auto; /* Centra el hr horizontalmente */
+    border: 1px solid white; /* Establece un borde de 1px de color negro */
+}
+
+/* fuentes*/
+@font-face {
+    font-family: Titulos;
+    src: url('fonts/Good\ Times\ Rg.otf') format('opentype');
+}
+@font-face {
+    font-family: subtitulos;
+    src: url('fonts/Holen\ Vintage.otf') format('opentype');
+}
+@font-face {
+    font-family: resto;
+    src: url('fonts/CaviarDreams_Bold.ttf') format('truetype');
+}
+
+legend{
+    font-family: Titulos;
+}
+h1{
+    font-family: Titulos;
+}
+h2{
+    font-family: Titulos;
+}
+h3{
+    font-family: Titulos;
+}
+
+p{
+    font-family: subtitulos;
+}
+/* norma de generalización (para el uso de la fuente "resto" en elementos que contienen numeros y estan en la etiqueta  <p> */
+.gen{
+    font-family: resto;
+}
